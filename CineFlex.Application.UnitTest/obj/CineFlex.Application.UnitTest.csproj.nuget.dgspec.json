@@ -1,0 +1,242 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Application.UnitTest\\CineFlex.Application.UnitTest.csproj": {}
+  },
+  "projects": {
+    "c:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Application.UnitTest\\CineFlex.Application.UnitTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Application.UnitTest\\CineFlex.Application.UnitTest.csproj",
+        "projectName": "CineFlex.Application.UnitTest",
+        "projectPath": "c:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Application.UnitTest\\CineFlex.Application.UnitTest.csproj",
+        "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Application.UnitTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Application\\CineFlex.Application.csproj": {
+                "projectPath": "C:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Application\\CineFlex.Application.csproj"
+              },
+              "C:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Domain\\CineFlex.Domain.csproj": {
+                "projectPath": "C:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Domain\\CineFlex.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.11.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.6.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.4, )"
+            },
+            "Shouldly": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Application\\CineFlex.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Application\\CineFlex.Application.csproj",
+        "projectName": "CineFlex.Application",
+        "projectPath": "C:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Application\\CineFlex.Application.csproj",
+        "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Domain\\CineFlex.Domain.csproj": {
+                "projectPath": "C:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Domain\\CineFlex.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.5.2, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Domain\\CineFlex.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Domain\\CineFlex.Domain.csproj",
+        "projectName": "CineFlex.Domain",
+        "projectPath": "C:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Domain\\CineFlex.Domain.csproj",
+        "packagesPath": "C:\\Users\\h\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\h\\Documents\\Internship-2023\\Backend\\backend_assessment\\CineFlex\\CineFlex.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\h\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -161,7 +161,7 @@ namespace CineFlex.Persistence.Migrations
 
                     b.HasIndex("MovieId");
 
-                    b.ToTable("MovieBooking");
+                    b.ToTable("MovieBookings");
                 });
 
             modelBuilder.Entity("CineFlex.Domain.Seat", b =>

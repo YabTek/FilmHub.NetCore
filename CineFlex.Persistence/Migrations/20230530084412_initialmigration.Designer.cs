@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CineFlex.Persistence.Migrations
 {
     [DbContext(typeof(CineFlexDbContex))]
-    [Migration("20230526074427_initialMigration")]
-    partial class initialMigration
+    [Migration("20230530084412_initialmigration")]
+    partial class initialmigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -164,7 +164,7 @@ namespace CineFlex.Persistence.Migrations
 
                     b.HasIndex("MovieId");
 
-                    b.ToTable("MovieBooking");
+                    b.ToTable("MovieBookings");
                 });
 
             modelBuilder.Entity("CineFlex.Domain.Seat", b =>

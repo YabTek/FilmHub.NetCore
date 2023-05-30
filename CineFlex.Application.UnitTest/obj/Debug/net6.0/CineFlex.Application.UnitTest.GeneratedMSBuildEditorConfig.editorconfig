@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CineFlex.Application.UnitTest
-build_property.ProjectDir = c:\Users\h\Documents\Internship-2023\Backend\backend_assessment\CineFlex\CineFlex.Application.UnitTest\
+build_property.ProjectDir = c:\Users\h\Documents\FilmHub.NetCore\CineFlex.Application.UnitTest\

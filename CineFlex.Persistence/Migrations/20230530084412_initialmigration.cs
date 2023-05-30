@@ -9,7 +9,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CineFlex.Persistence.Migrations
 {
     /// <inheritdoc />
-    public partial class initialMigration : Migration
+    public partial class initialmigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -49,7 +49,7 @@ namespace CineFlex.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "MovieBooking",
+                name: "MovieBookings",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
@@ -64,20 +64,20 @@ namespace CineFlex.Persistence.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_MovieBooking", x => x.Id);
+                    table.PrimaryKey("PK_MovieBookings", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_MovieBooking_Cinemas_CinemaEntityId",
+                        name: "FK_MovieBookings_Cinemas_CinemaEntityId",
                         column: x => x.CinemaEntityId,
                         principalTable: "Cinemas",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_MovieBooking_Cinemas_CinemaId",
+                        name: "FK_MovieBookings_Cinemas_CinemaId",
                         column: x => x.CinemaId,
                         principalTable: "Cinemas",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_MovieBooking_Movies_MovieId",
+                        name: "FK_MovieBookings_Movies_MovieId",
                         column: x => x.MovieId,
                         principalTable: "Movies",
                         principalColumn: "Id",
@@ -100,9 +100,9 @@ namespace CineFlex.Persistence.Migrations
                 {
                     table.PrimaryKey("PK_Seats", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Seats_MovieBooking_MovieBookingId",
+                        name: "FK_Seats_MovieBookings_MovieBookingId",
                         column: x => x.MovieBookingId,
-                        principalTable: "MovieBooking",
+                        principalTable: "MovieBookings",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -126,18 +126,18 @@ namespace CineFlex.Persistence.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_MovieBooking_CinemaEntityId",
-                table: "MovieBooking",
+                name: "IX_MovieBookings_CinemaEntityId",
+                table: "MovieBookings",
                 column: "CinemaEntityId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_MovieBooking_CinemaId",
-                table: "MovieBooking",
+                name: "IX_MovieBookings_CinemaId",
+                table: "MovieBookings",
                 column: "CinemaId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_MovieBooking_MovieId",
-                table: "MovieBooking",
+                name: "IX_MovieBookings_MovieId",
+                table: "MovieBookings",
                 column: "MovieId");
 
             migrationBuilder.CreateIndex(
@@ -153,7 +153,7 @@ namespace CineFlex.Persistence.Migrations
                 name: "Seats");
 
             migrationBuilder.DropTable(
-                name: "MovieBooking");
+                name: "MovieBookings");
 
             migrationBuilder.DropTable(
                 name: "Cinemas");
